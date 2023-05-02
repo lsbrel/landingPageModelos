@@ -1,0 +1,132 @@
+/* Editando a scrollbar */
+::-webkit-scrollbar {
+    width: .8rem;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(16, 50, 100, 0.8);
+}
+::-webkit-scrollbar-thumb {
+    background: #091930;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #103264;
+}
+/* Fim da scrollbar */
+html{
+    scroll-behavior: smooth !important;
+}
+body{
+    overflow-x: hidden;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(36,123,255);
+    background: linear-gradient(90deg, rgba(36,123,255,1) 2%, rgba(36,123,255,1) 14%, rgba(57,115,234,1) 35%, rgba(80,106,210,1) 84%);
+    width: 500%;
+    height: 95vh;
+    border-radius: 0 0 20% 10%;
+    box-shadow: 0.5px 0.5px;
+}
+.header li{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    margin: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.header li:hover{
+    color: rgb(128, 179, 255);
+    transition: all 0.4s;
+}
+.header h4{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.header h4:hover{
+    transition: all 0.4s;
+    transform: scale(1.1);
+}
+.aside{
+    /* margin-top: 1rem; */
+}   
+.formulario{
+    margin-top: 8rem;
+}
+.formulario input{
+    width: 80%;
+    height: 3rem;
+    border: 1px solid rgb(132, 132, 132);
+    border-radius: 2px;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.formulario input:focus{
+    outline: none;
+}
+.formulario button{
+    width: 50%;
+    height: 3rem;
+    border: 0px solid white;
+    border-radius: 5px;
+    background-color: #103264;
+    color: ghostwhite;
+}
+.formulario h2{
+    color: #103264;
+
+}
+.formulario h2::after, .formulario h2::before{
+    content: '';
+    background: currentColor;
+    width: 100%;
+    margin: 10px auto;
+    height: 1px;
+    display: block;
+}
+
+.footer{
+    color: ghostwhite;
+    height: 40vh;
+}
+.footer::before{
+    content: '';
+    background: #103264;
+    /* background: linear-gradient(90deg, rgba(36,123,255,1) 2%, rgba(36,123,255,1) 14%, rgba(57,115,234,1) 35%, rgba(80,106,210,1) 84%); */
+    position: absolute;
+    width: 500%;
+    height: 40vh;
+    border-radius: 15% 40% 0 0;
+}
+.benefits-card{
+    margin-top: 3rem;
+    height: 80vh;
+    width: 100%;
+    background-color: rgba(30, 99, 204, 0.9);
+}
+.benefits-card div::before, .benefits-card div::after{
+    content: '';
+    background: currentColor;
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    height: 1px;
+    display: block;
+}
+
+
+
+
+
+.card-approval{
+    /* margin-top: 3rem; */
+    height: 80vh;
+    width: 100%;
+    background-color: rgba(23, 74, 152, 0.9);
+}
